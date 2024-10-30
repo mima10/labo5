@@ -1,0 +1,45 @@
+.puzzle{
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-template-areas:
+          "hautGauche haut droitHaut "
+          "gaucheCentre centre centreDroit" 
+          "basGauche bas basDroit" ;
+}
+
+.piece{
+    display: table-row;
+}
+
+#piece1{
+    
+    grid-area: centreDroit;
+}
+
+#piece2{
+    grid-area: basGauche;
+}
+#piece3{
+    grid-area: centre; 
+}
+#piece4{
+    grid-area: bas; 
+}
+#piece5{
+    grid-area: droitHaut; 
+}
+#piece6{
+    grid-area: hautGauche; 
+}
+#piece7{
+    grid-area: basDroit; 
+}
+#piece8{
+    grid-area: haut;
+}
+#piece9{
+    grid-area: gaucheCentre; 
+}
+
